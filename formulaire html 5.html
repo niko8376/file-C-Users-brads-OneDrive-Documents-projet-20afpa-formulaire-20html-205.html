@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Enquete</title>
+    </head>
+    <body>
+        <h2 align="center"> Nous lançons une grande enquête sur les anciens stagiaires</h2>
+        <h5 align="center"> merci de nous répondre</h5><br />
+        <form method="get" action="http://172.16.150.3/traitform.jsp">
+          <input type="text" name="nom" /> Votre nom<br /> 
+          <input type="text" name="prenom" /> Votre prénom<br />
+          <input type="text" name="date_naissance" /> Votre date de naissance<br />
+          <input type="text" name="adresse" /> Votre adresse<br />
+          <input type="text" name="ville" /> Votre ville<br />
+          <input type="text" name="code_postal" /> Votre code postal<br />
+          <input type="text" name="email" /> Votre E-mail<br />
+          <input type="radio" name="sexe1" value="homme" /> Vous êtes un homme<br />
+          <input type="radio" name="sexe2" value="femme" /> Votre êtes une femme<br />
+
+          <select name="profession">
+              <option value="profession1"> Developpeur</option>
+              <option value="profession2"> Analyste</option>
+              <option value="profession3"> Chef de projet</option>
+              <option value="profession4"> Autre</option>
+          </select><br />
+          <input type="text" name="autre" /> Si vous avez répondu autre, précisez<br/><br/>
+
+          <select name="salaire">
+              <option value="salaire1"> <1000 € </option>
+              <option value="salaire2"> >1000 € et < 1500 €</option>
+              <option value="salaire3"> >1500 € et < 2000€</option>
+              <option value="salaire4"> >2000€</option>
+          </select><br />
+          <input type="text" name="date_stage"/> En quelle année avez-vous suivi le stage AFPA<br/><br/>
+          <textarea name="commentaire" cols="30" rows="4">Vos commentaires</textarea><br/>
+          <strong>Merci d'avoir répondu au questionnaire</strong><br/>
+          <input type="submit" value="validez"><input type="reset" value="Annulez">
+       </form>
+    </body>
+    </html>
